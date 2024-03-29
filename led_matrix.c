@@ -54,3 +54,11 @@ void MAX7219_Display(uint8_t *data) {
     }
 }
 
+// 显示单个数字
+void displayNumber(uint8_t number) {
+    if(number >= 0 && number <= 9) {
+        MAX7219_Display(digits[number]);
+    }
+}
+
+
